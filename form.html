@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>账号信息填写界面</title>        
+    <link rel="stylesheet" type="text/css" href="forms.css"/>
+</head>
+<body>
+    <script type="text/javascript" src="forms.js"></script>
+    <div class="usermsg_box">
+        <div class="title">账户信息填写</div>
+        <div class="item_box">
+            <label class="info">昵&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称：</label>
+            <input placeholder="请输入昵称" id="name" class="form">
+        </div>
+        <div class="item_box" id="gender">
+            <label class="info">性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：</label>
+            <input type="radio" checked value="1" name="gender" id="man">
+            <label>男</label>
+            <input type="radio" value="2" name="gender" id="woman">
+            <label>女</label>
+        </div>
+        <div class="item_box">
+            <label class="info">手机号码：</label>
+            <input placeholder="请输入手机号码" id="tel" class="form">
+        </div>
+        <div class="item_box">
+            <label class="info">密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：</label>
+            <input placeholder="请输入密码" id="password" class="form" type="password">
+        </div>
+        <div class="password_tip">(密码中要求出现大小写字母、至少出现2个数字、只能出现一次 #&*?@ (英文输入)中的一个，长度在8-15位之间)</div>
+        <div class="item_box">
+            <label class="info">确认密码：</label>
+            <input placeholder="请再次输入密码" id="confirm_password" class="form" type="password">
+        </div>
+        <input class="submit" type="button" value="保  存" onclick="_submit()">
+    </div>
+
+</body>
